@@ -124,14 +124,11 @@ function oceanAnimate(){ // 6 fps = 1 frame per 1/6 seconds = 1 frame per 1000/6
 
 }
 function headAnimate(){
-	console.log("headAnimate called")
 	requestAnimationFrame(headAnimate);
 	let now = Date.now();
 	let elapsedMilliseconds = now - then2;
 	let frameInterval = 1000/4;
-	console.log(elapsedMilliseconds);
 	if(elapsedMilliseconds > frameInterval){
-		console.log("headC updated")
 		then2 = now - (elapsedMilliseconds%frameInterval);
 		// then(point0) ...... point1 .....now ....point2,
 		//[point1 - then] is frameinterval, 
