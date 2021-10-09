@@ -29,24 +29,24 @@ let headtex = new Array();
 let oceanmat = new Array();
 let headmat = new Array();
 for(let i = 0; i<=6;i++){
-	oceantex[i] = textureLoader.load('./files/ocean'+(i+1)+'.png');
+	oceantex[i] = textureLoader.load('files/ocean'+(i+1)+'.png');
 
 	//two lines for no interpolation when zooming onto texture 
 	oceantex[i].magFilter = THREE.NearestFilter;
 	oceantex[i].minFilter = THREE.NearestFilter;
 }
 
-const handtex = textureLoader.load('./files/hand.png');
+const handtex = textureLoader.load('files/hand.png');
 handtex.magFilter = THREE.NearestFilter;
 handtex.minFilter = THREE.NearestFilter;
 
-const bodytex = textureLoader.load('./files/body.png');
+const bodytex = textureLoader.load('files/body.png');
 bodytex.magFilter = THREE.NearestFilter;
 bodytex.minFilter = THREE.NearestFilter;
 
 
 for(let i = 0; i<=2;i++){
-	headtex[i] = textureLoader.load('./files/head'+(i+1)+'.png');
+	headtex[i] = textureLoader.load('files/head'+(i+1)+'.png');
 	headtex[i].magFilter = THREE.NearestFilter;
 	headtex[i].minFilter = THREE.NearestFilter;
 }
